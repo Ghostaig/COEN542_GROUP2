@@ -1,0 +1,16 @@
+feature,importance
+Packet Length Variance,0.093115
+Bwd Packet Length Std,0.075328
+Destination Port,0.052421
+Max Packet Length,0.048193
+Total Length of Fwd Packets,0.041543
+Bwd Packet Length Max,0.040850
+Average Packet Size,0.039734
+Packet Length Std,0.038589
+Bwd Packet Length Mean,0.036491
+Subflow Bwd Bytes,0.035968
+Packet Length Mean,0.031653
+Subflow Fwd Bytes,0.025109
+Fwd Header Length55,0.023158
+Init_Win_bytes_forward,0.022927
+Avg Bwd Segment Size,0.022809

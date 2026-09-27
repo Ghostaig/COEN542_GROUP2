@@ -1,0 +1,7 @@
+# COEN542 Big Data Network Intrusion Detection Project
+
+kafka-python==3.0.11
+pyspark==4.2.0
+pandas==2.3.3
+pyarrow==25.0.1
+streamlit==1.64.0
