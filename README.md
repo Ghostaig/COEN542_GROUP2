@@ -124,22 +124,44 @@ The larger workload caused greater memory pressure and disk spilling, so runtime
 
 ## HDFS
 
-The project uses Apache HDFS for scalable storage.
+The repository includes the implemented HDFS configuration in:
 
 ```text
-/coen542/
-├── raw/
-├── processed/
-└── models/
+config/hdfs/
+├── core-site.xml
+├── hdfs-site.xml
+└── README.md
 ```
 
-The prepared ML dataset is stored at:
+The configuration uses Hadoop 3.4.1, `hdfs://localhost:9000` as the default
+filesystem, and replication factor 1 for the single-node development setup.
+
+HDFS project directories:
+
+```text
+/coen542/raw
+/coen542/processed
+/coen542/models
+```
+
+Processed ML dataset:
 
 ```text
 /coen542/processed/ml_binary
 ```
 
-The HDFS ML dataset contains 2,830,743 rows and 79 columns: 78 features plus `binary_label`.
+The dataset contains 2,830,743 rows and 79 columns (78 features plus
+`binary_label`).
+
+## Why HDFS Data Is Not Committed
+
+The actual NameNode/DataNode storage directories are not included in GitHub.
+They are HDFS-managed storage and can be large and machine-specific.
+
+GitHub contains the reproducible configuration and setup instructions instead.
+
+See `config/hdfs/README.md` for complete setup and verification commands.
+
 
 ## Dashboard
 
