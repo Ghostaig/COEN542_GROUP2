@@ -46,6 +46,10 @@ COEN542_GitHub/
 │   ├── 03_train_model.py
 │   ├── 04_scalability_experiment.py
 │   └── spark_streaming_consumer.py
+storage/hdfs/
+│   ├── core-site.xml
+│    ├── hdfs-site.xml
+│   └── README.md
 ├── results/
 │   ├── confusion_matrix.csv
 │   ├── feature_importance.csv
